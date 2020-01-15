@@ -1,0 +1,138 @@
+.line {
+      display: flex;
+      width: 500px;
+      justify-content: space-between;
+      position: relative;
+      margin: auto;
+      align-items: center;
+      text-align: center;
+    }
+
+    .btn {
+      align-items: center;
+      text-align: center;
+      border-radius: 4px;
+      background: red;
+    }
+
+    /*.btn1 {
+      width: 100px;
+      height: 30px;
+      align-items: center;
+      text-align: center;
+      border-radius: 4px;
+      background: red;
+    }
+*/
+table,tr,th,td {
+  border: black;
+}
+
+.tbl tr {
+  height: 50px;
+  background-color: brown;
+}
+
+.tbl tr th {
+  background: black;
+  flex: 0 0 25%;
+  font-size: 15px;
+  color: brown;
+  text-transform: capitalize;
+  font-weight: 400;
+  font-weight: bold;
+}
+
+.tbl tr td {
+  text-align: center;
+  padding-left: 10px;
+}
+
+.tbl {
+  margin-right: 60px;
+  flex-grow: 2;
+  align-items: center;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.pay {
+  width: 600px;
+  position: relative;
+  margin: auto;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  font-size: 20px;
+  margin-top: 50px;
+  background-color: sandybrown;
+}
+
+.pay h2 {
+  color: red;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  background-color: black;
+}
+
+.pay p {
+  color: red;
+  font-size: 20px;
+  text-align: left;
+  margin-left: 100px;
+}
+
+.pay button {
+  float: right;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+
+.cart {
+  position: relative;
+  border: none;
+  height: 30px;
+  background: white;
+  color: black;
+  font-size: 15px;
+}
+
+.delete {
+  border-width: 1px;
+  background-color: red;
+}
+
+.delete:hover {
+  border-color: black;
+  color: whitesmoke;
+}
+
+h1 {
+  text-align: center;
+  color: red;
+  border-style: double;
+  width: 50%;
+  margin-left: 350px;
+  background-color: black;
+  border-radius: 10px;
+  margin-top: 20px;
+  color: red
+}
+h2{
+  text-align: center;
+  color: red;
+  border-style: double;
+  width: 70%;
+  background-color: black;
+  border-radius: 10px;
+  margin-left: 100px;
+}

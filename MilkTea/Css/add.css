@@ -1,0 +1,14 @@
+.container {
+	padding: 16px;
+	width: 500px;
+	justify-content: center;
+	border-style: ridge;
+	align-items: center;
+}
+
+body {
+	margin-top: 50px;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+}

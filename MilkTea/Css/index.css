@@ -1,0 +1,70 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: sandybrown;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    border-style: solid black 1px;
+    border-radius: 10px;
+    height: 20px;
+    margin-top: 20px;
+}
+
+.milk-container {
+    display: grid;
+    padding: 50px 30px 30px 30px;
+    grid-template-columns: auto auto auto auto;
+    text-align: center;
+}
+
+.item-milk {
+    border: 1px solid black;
+    margin: 20px;
+    border-radius: 10px;
+    background-color: black;
+}
+
+.item-milk-icon {
+    width: 100%;
+}
+
+.item-milk-name {
+    font-size: 20px;
+    margin-left: 8px;
+    color: white;
+}
+
+.item-milk-type {
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 8px;
+}
+
+.item-milk-price {
+    font-size: 18px;
+    margin-left: 8px;
+    color: white;
+}
+
+.footer {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    background-color: black;
+}
+
+.footer-lienhe {
+    color: white;
+}
+
+.footer-giaohang {
+    color: white;
+}
+
+.footer-menu {
+    color: white;
+}

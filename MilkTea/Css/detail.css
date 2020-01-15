@@ -1,0 +1,79 @@
+h1 {
+  text-align: center;
+  color: red;
+  width: 100%;
+  background-color: black;
+  border-radius: 10px;
+}
+
+h2 {
+  font-size: 25px;
+}
+
+h3 {
+  font-size: 20px;
+  margin-left: 30px;
+}
+
+.flex2 {
+  justify-content: center;
+  margin-left: 70px;
+  align-items: center;
+}
+
+.content {
+  justify-content: center;
+  margin-left: 200px;
+  align-items: center;
+}
+
+h3{
+  justify-content: space-around;
+}
+
+.detail-container {
+  padding: 16px;
+  background-color: white;
+  width: 500px;
+  justify-content: center;
+  border-style: round;
+  align-items: center;
+  margin-left: 400px;
+  background: black;
+  border-radius: 10px;
+  margin-top: 30px;
+  height: 680px;
+}
+
+button {
+  margin-left: 100px;
+  background: red;
+  border-radius: 10px;
+  border-color: black;
+}
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  background: black;
+  justify-content: space-between;
+}
+
+.menu a:hover {
+    background-color: grey;
+}
+
+.menu a {
+    margin: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    justify-content: center;
+    color: sandybrown;
+    margin-top: 15px;
+}
+
+.menu button {
+    margin-top: 0px;
+}
+.cart button {
+    margin-top: 15px;
+}

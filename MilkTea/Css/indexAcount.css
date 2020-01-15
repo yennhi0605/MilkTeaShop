@@ -1,0 +1,193 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: sandybrown;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    border-style: solid black 1px;
+    border-radius: 10px;
+    height: 20px;
+    margin-top: 20px;
+}
+
+.container {
+    padding: 16px;
+    background-color: white;
+    width: 500px;
+    justify-content: center;
+    border-style: ridge;
+    align-items: center;
+}
+
+input[type=text],
+input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.container button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.container button:hover {
+    opacity: 0.8;
+}
+
+.line {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    align-items: center;
+    text-align: center;
+    border-bottom: center;
+    margin-top: 10px;
+    margin-left: 170px;
+    border-radius: 20px;
+    color: black;
+    height: 40px;
+    border-collapse: collapse;
+    border: 2px solid gray;
+}
+
+.slideshow-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    background: black;
+    justify-content: space-between;
+}
+
+.menu a:hover {
+    background-color: grey;
+}
+
+.menu a {
+    margin: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    justify-content: center;
+    color: sandybrown;
+    margin-top: 15px;
+}
+
+.menu button {
+    margin-top: 0px;
+}
+.cart button {
+    margin-top: 15px;
+}
+
+
+/*.search{
+    height: 20px;
+    width: 300px;
+    background: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    justify-content: left;
+    margin-top: 15px;
+}*/
+
+.add button {
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.edit button {
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.milk-container {
+    display: grid;
+    padding: 50px 30px 30px 30px;
+    grid-template-columns: auto auto auto auto;
+    text-align: center;
+}
+
+.item-milk {
+    border: 1px solid black;
+    margin: 20px;
+    border-radius: 10px;
+    background-color: black;
+}
+
+.item-milk-icon {
+    width: 100%;
+}
+
+.item-milk-name {
+    font-size: 20px;
+    margin-left: 8px;
+    color: white;
+}
+
+.item-milk-type {
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 8px;
+}
+
+.item-milk-price {
+    font-size: 18px;
+    margin-left: 8px;
+    color: white;
+}
+
+.btn {
+    margin-bottom: 10px;
+    height: 50px;
+}
+
+.btn button {
+    width: 80px;
+}
+
+.footer {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    background-color: black;
+}
+
+.footer-lienhe {
+    color: white;
+}
+
+.footer-giaohang {
+    color: white;
+}
+
+.footer-menu {
+    color: white;
+}
+img{
+    box-shadow: 1px 1px 1px grey;
+}
+

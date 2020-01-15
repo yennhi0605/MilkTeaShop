@@ -1,0 +1,49 @@
+drop database if exists MilkTeaShop;
+create database MilkTeaShop;
+use MilkTeaShop;
+
+create table MilkTea(
+	id int primary key AUTO_INCREMENT,
+	name varchar(50),
+	price float,
+	type varchar(50),
+	image varchar(50),
+	description varchar(255)
+);
+
+INSERT INTO `MilkTea`(`name`, `price`, `type`, `image`,`description`) VALUES ("Bạc Xỉu", 15000, "Coffee", "image/bacxiu.jpg", "Bạc xỉu là cách gọi tắt từ cụm từ “ bạc tẩy xỉu phé” xuất phát từ tiếng Quan Thoại (là tiếng Trung phổ biến trong công động người Hoa ở Sài Gòn) nhằm để chỉ món sữa nóng thêm một chút cafe. Trong tiếng Quan Thoại thì “Bạc” là màu trắng, “Tẩy” là cái ly không, “Xỉu” là một chút và “Phé” là cafe. Vì thế, có thể khẳng định rằng bạc xỉu và cafe sữa là 2 món đồ uống hoàn toàn khác nhau");
+INSERT INTO `MilkTea`(`name`, `price`, `type`, `image`,`description`) VALUES ("Cà Phê Đen", 8000, "Coffee", "image/cfden.jpg", "Nguyên liệu chính là cà phê nguyên chất. Hạt cà phê  được xay nhỏ, nén vào trong các phin và nước sôi được đổ lên trên để được lọc vào một ly, hay tách, tại bên dưới của phin. Thuận tiện cho việc mang đi. Giúp tỉnh táo tinh thần khi bạn làm việc mệt mỏi");
+INSERT INTO `MilkTea`(`name`, `price`, `type`, `image`) VALUES ("Cà Phê Sữa", 10000, "Coffee", "image/cfsua.jpg", "Nguyên liệu chính của thức uống này là sữa đặc và cà phê. Sữa và cà phê được hòa lẫn, thành màu nâu non. Cà phê sữa có 2 dạng: cà phê sữa nóng và cà phê sữa đá. Tùy vào vùng miền và thời tiết để khách hàng có thể lựa chọn");
+INSERT INTO `MilkTea`(`name`, `price`, `type`, `image`,`description`) VALUES ("Ca Cao", 30000, "Coffee", "image/cacao.jpg", "Thức uống này cũng được gọi thông thường là cacao nóng hay sô-cô-la nóng. Bột cacao chính là những hạt bột khô làm từ những hạt cacao nghiền và loại bỏ bơ cacao từ chất rắn cacao, thứ mà trong đó vừa tối vừa đắng.Đây là một dạng nguyên thủy của sô-cô-la bởi vì nó là hỗn hợp giữa bột cacao và bơ cacao");
+INSERT INTO `MilkTea`(`name`, `price`, `type`, `image`,`description`) VALUES ("Espresso", 40000, "Milktea", "image/espresso.jpg", "Cà phê Espresso, trước đây còn được gọi là cà phê kem là loại thức uống cà phê được pha chế bằng cách dùng nước nóng nén dưới áp suất cao (khoảng 9 đến 10 bar) qua bột cà phê được xay mịn.Nguyên liệu chính của thức uống này vẫn là các hạt cà phê dùng cho các loại cà phê khác nhưng hạt cà phê thường được rang sẫm màu hơn. Có nguồn gốc từ nước Ý");
+INSERT INTO `MilkTea`(`name`, `price`, `type`, `image`,`description`) VALUES ("Latte", 45000, "Milktea", "image/latte.jpg","Latte là kiểu café sữa của Ý, được làm từ nguyên liệu chính là Espresso và sữa, trong đó Espresso chiếm 1/3, sữa nóng chiếm 1/3 và 1/3 còn lại là bọt sữa.Điều đặc biệt ở đây thì để tạo nên một ly Latte hấp dẫn đó chính là lớp bọt sữa được tạo hình nghệ thuật.Do có độ ngậy của sữa nên thích hợp với nhiều độ tuổi và những ai không quen uống café đậm. Ngoài ra, Latte cũng có thêm nhiều “phiên bản” hấp dẫn khác tùy theo khẩu vị thực khách như Latte trà xanh, Latte caramel, Latte Hazelnut...");
+INSERT INTO `MilkTea`(`name`, `price`, `type`, `image`,`description`) VALUES ("Trà Sữa Trân Châu", 50000, "Milktea", "image/tranchau.jpg", "Hạt trân châu được làm từ củ sắn, đun sôi khoảng dưới nửa tiếng cho tới khi chín hoàn toàn, nhưng vẫn còn độ dẻo, khi đó hạt nở ra đáng kể, rồi làm lạnh trong khoảng nửa tiếng nữa.Trà sữa trân châu là trà pha đường, sữa và thường có các hương liệu khác. Trà uống nóng hoặc uống với nước đá. Trà được lắc kĩ, tạo ra các bong bóng nhỏ.Trà thường được pha bằng trà đen hoặc trà xanh nóng, rồi đem lắc trong hộp lắc cocktail hoặc được trộn trong dụng cụ trộn với đá cho tới khi trà lạnh. Hỗn hợp này thường được cho thêm sữa và hạt bột sắn nấu chín.");
+INSERT INTO `MilkTea`(`name`, `price`, `type`, `image`,`description`) VALUES ("Trà Xanh Đá Xay", 60000, "Milktea", "image/traxanh.jpg", "Matcha Đá Xay, hay còn gọi là Matcha Ice Blend, là thức uống được kết hợp từ vị ngọt, sệt như kem, dịu và chỉ hơi có vị chát,  hương vị trà xanh là đặc trưng của matcha hòa cùng vị sữa, kem tươi béo ngậy, tất cả được xay nhuyễn với đá tạo ra một thức uống thật thơm ngon và mát lạnh.Matcha có tác dụng tốt với thể chất và tinh thần, kích thích làm tỉnh táo, làm lắng đọng và giảm căng thẳng");
+INSERT INTO `MilkTea`(`name`, `price`, `type`, `image`,`description`) VALUES ("Trà Lipton", 25000, "Juice_Tea", "image/lipton.jpg", "Thành phần là 100% búp trà xanh. Sản phẩm trà Lipton với các loại trà túi, trà hoà tan và cả trà trong lon uống ngay. Vị đậm đà của trà truyền thống được kết hợp với rất nhiều hương vị khác nhau tuỳ theo sở thích và khẩu vị của người tiêu dùng như trà chanh, trà đào, trà dâu, trà bạc hà...Trà Lipton giúp cho tinh thần trở nên thư giản và tăng sự tỉnh táo, đem lại hiệu quả cao trong công việc.");
+INSERT INTO `MilkTea`(`name`, `price`, `type`, `image`,`description`) VALUES ("Trà Tắc", 10000, "Juice_Tea", "image/tratac.jpg", "Trà tắc là một loại thức uống mát lành quen thuộc và thành phần chính của nó là trà, quả tắc và đường. Ngoài ra còn có thêm chanh dây, cam, mật ong tuỳ vào yêu cầu của khách hàng. Trà thì tùy loại như trà túi lọc, trà lài, trà Thái Nguyên là 3 loại phổ biến nhất, hương thơm ngát, chút đắng nhẹ pha cùng nước cốt quả tắc cực kì bắt vị. Ngoài trà tắc truyền thống ra thì còn có thêm hương vị như mật ong, cam, chanh dây v.v. giúp người uống có nhiều sự lựa chọn");
+INSERT INTO `MilkTea`(`name`, `price`, `type`, `image`,`description`) VALUES ("Trà Đào", 250000, "Juice_Tea", "image/tradao.jpg", "Trà đào chính xác là thức uống lý tưởng cho mùa hè mang vị ngọt thanh tươi mát, bổ dưỡng.Trà đào mang hương vị thơm ngon mát lạnh đặc biệt xóa tan sức nóng mùa hè.Một cốc trà đào thơm ngon mỗi ngày sẽ giúp bạn có làn da trắng sáng và làm giảm vết thâm do mụn đáng kể.");
+INSERT INTO `MilkTea`(`name`, `price`, `type`, `image`,`description`) VALUES ("Sữa Tươi Thạch Trái Cây", 30000, "Juice_Tea", "image/thach.jpg", "Sữa chua khi được kết hợp với những miếng thạch dẻo giòn, sẽ tạo nên món thức uống vui miệng, nhưng vẫn rất thơm ngon. Giúp cơ thể thanh mát và có một làn da tươi trẻ");
+INSERT INTO `MilkTea`(`name`, `price`, `type`, `image`,`description`) VALUES ("Sinh Tố Xoài", 35000, "Smoothie", "image/xoai.jpg", "Sinh tố xoài là thức uống giải nhiệt ngày hè, đồng thời mang đến nhiều dưỡng chất cần thiết cho cơ thể.Là một trong những loại trái cây có vị ngọt thanh và giàu giá trị dinh dưỡng của sinh tố xoài sẽ giúp hỗ trợ tốt cho quá trình tiêu hóa của cơ thể, có khả năng chống lại các bệnh như viêm đường ruột, bổ sung chất sắt, chống giảm thị lực và đẹp da");
+INSERT INTO `MilkTea`(`name`, `price`, `type`, `image`,`description`) VALUES ("Yogurt Trái Cây", 25000, "Smoothie", "image/traicay.jpg", "Yaourt hay còn gọi sữa chua là một sản phẩm lên men từ sữa tốt cho sức khỏe. Trong yaourt có lợi khuẩn tốt cho hệ tiêu hóa.Yaourt trái cây là món ăn khoái khẩu của nhiều người, nhất là các chị em phụ nữ và các bé nhỏ. Vị ngon tuyệt vời từ yaourt cùng các loại trái cây tươi kết hợp làm cho bạn cảm thấy ngon miệng. Ngoài hương vị, món ăn này còn có công dụng làm đẹp da hiệu quả.");
+INSERT INTO `MilkTea`(`name`, `price`, `type`, `image`,`description`) VALUES ("Sinh Tố Bơ", 35000, "Smoothie", "image/bo.jpg", "Sinh tố là chỉ thức uống được chế biến từ các loại hoa quả tươi bằng cách xay nhuyễn với một vài muỗng cà phê sữa đặc có đường, đá vụn và trái cây tươi. Sinh tố là một nước uống bổ dưỡng giàu vitamin rất tốt cho sức khỏe.");
+INSERT INTO `MilkTea`(`name`, `price`, `type`, `image`,`description`) VALUES ("Orion", 25000, "Smoothie", "image/orion.jpg", "Đây là một thức uống pha trộn, pha chế từ trái cây (gần giống với sinh tố hoa quả của Việt Nam) và đôi khi được thêm sô cô la, bơ, đậu phộng. Ngoài ra, nó còn bao gồm cả đá xay và nước ép trái cây để lạnh, mật ong hoặc các xi-rô và các thành phần để lạnh khác.");
+
+create table User(
+	id int primary key AUTO_INCREMENT,
+	username varchar(50) UNIQUE,
+	password varchar(50),
+	fullName varchar(50),
+	role varchar(20)
+);
+INSERT INTO `user`(`username`, `fullName` ,`password`,`role`) VALUES ('admin', 'Administator' ,'admin', 'admin');
+INSERT INTO `user`(`username`, `fullName` ,`password`,`role`) VALUES ('nam34', 'Le Nam', '123', 'user');
+
+create table Cart(
+	id int primary key auto_increment,
+	idPro int,
+	idUser int,
+	image varchar(255),	
+	quantity int(20),
+	price decimal,
+	total decimal
+);
